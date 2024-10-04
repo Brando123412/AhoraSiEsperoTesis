@@ -9,9 +9,6 @@ public class ControladorScenes : MonoBehaviour
 {
     [SerializeField] PlayerPositionReferences playerPositionReferences;
     [SerializeField] private GameEvent[] controllerScenes;
-
-
-
     private void Start()
     {
        controllerScenes[0].Raise();
