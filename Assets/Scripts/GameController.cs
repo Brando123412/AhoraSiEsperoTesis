@@ -11,4 +11,7 @@ public class GameController : MonoBehaviour
     {
         soHerramientas.RetunrObject(Vector3.zero);
     }
+
+    
+
 }

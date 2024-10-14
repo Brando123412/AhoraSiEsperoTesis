@@ -6,11 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ScenesGame/ScenesGame/SceneGame1.unity
-    guid: d3f89da4088e7a547b4879d809c8a95e
-  - enabled: 1
     path: Assets/Scenes/ScenesGame/EscenaInicial.unity
     guid: c8b5894cbc099944da3af8d09db95851
+  - enabled: 1
+    path: Assets/Scenes/ScenesGame/ScenesGame/SceneMenu.unity
+    guid: 5acd4ce3d737dbe4f818ae6fd803b18f
+  - enabled: 1
+    path: Assets/Scenes/ScenesGame/ScenesGame/SceneGame2.unity
+    guid: e8ef4ebd361592c4e9e9213f74d0445e
+  - enabled: 1
+    path: Assets/Scenes/ScenesGame/ScenesGame/SceneGame3.unity
+    guid: 86dadcfbf3cb44e49abe8b2db31e36a3
+  - enabled: 1
+    path: Assets/Scenes/ScenesGame/ScenesGame/SceneGame4.unity
+    guid: e44a8d8e09c86be43866796c0e1bc94a
+  - enabled: 1
+    path: Assets/Scenes/ScenesGame/ScenesGame/SceneGame5.unity
+    guid: 84efb8c99bb50094cad318b8ec02adc7
+  - enabled: 1
+    path: Assets/Scenes/ScenesGame/ScenesGame/SceneGame6.unity
+    guid: 266502764a553e940981fc890146725e
+  - enabled: 1
+    path: Assets/Scenes/ScenesGame/ScenesGame/SceneGame7.unity
+    guid: 6a33b1d43f99d3444b13df2a68faa3a5
+  - enabled: 1
+    path: Assets/Scenes/ScenesGame/SceneController.unity
+    guid: b2003cfdb2b20a74291913b22bbe8b97
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 840d8fe45d7a99144a28f1378068f5df,
       type: 2}

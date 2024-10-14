@@ -1361,6 +1361,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Setup
       objectReference: {fileID: 0}
+    - target: {fileID: 3638122593524046362, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8623114820274390523, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_BackGroundColor.a
@@ -1576,6 +1581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8e487a5676a68448674b6fbe1bb8a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelPower: {fileID: 0}
+  levelPowerActivation: 0
 --- !u!4 &769938518
 Transform:
   m_ObjectHideFlags: 0
@@ -3284,6 +3291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b88bda5f2f0d9946bff66349400c86d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  presentationSprites: []
+  imagePresentation: {fileID: 0}
 --- !u!4 &1989975863
 Transform:
   m_ObjectHideFlags: 0

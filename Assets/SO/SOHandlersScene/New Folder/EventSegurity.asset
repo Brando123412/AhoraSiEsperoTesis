@@ -9,10 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59d4d5e46a7370a4ba5e2218087d955b, type: 3}
-  m_Name: SceneGame1
+  m_Script: {fileID: 11500000, guid: 3b992bc087632f743a0562940a92f622, type: 3}
+  m_Name: EventSegurity
   m_EditorClassIdentifier: 
-  sceneName: SceneMenu
-  sceneType: 3
-  isAditive: 1
-  isInactive: 0

@@ -1463,6 +1463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Setup
       objectReference: {fileID: 0}
+    - target: {fileID: 3638122593524046362, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8623114820274390523, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_BackGroundColor.a
@@ -1875,55 +1880,42 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b327a22ba39d8d24c9d02df8eb476d53,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 769764528}
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: b327a22ba39d8d24c9d02df8eb476d53,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1040938637}
   m_SourcePrefab: {fileID: 100100000, guid: b327a22ba39d8d24c9d02df8eb476d53, type: 3}
---- !u!1 &769938516
+--- !u!1 &769764527 stripped
 GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b327a22ba39d8d24c9d02df8eb476d53,
+    type: 3}
+  m_PrefabInstance: {fileID: 769764526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &769764528
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 769938518}
-  - component: {fileID: 769938517}
-  m_Layer: 0
-  m_Name: LevelPowerController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &769938517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769938516}
+  m_GameObject: {fileID: 769764527}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af8e487a5676a68448674b6fbe1bb8a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &769938518
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 769938516}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93fc1a7ef684e4f43aaeedce1b9d326f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &789454944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3269,7 +3261,7 @@ PrefabInstance:
     - target: {fileID: 7994525622998059575, guid: af5d34c8bd190c64998fc239614e3d95,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3678,6 +3670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b88bda5f2f0d9946bff66349400c86d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  presentationSprites: []
+  imagePresentation: {fileID: 0}
 --- !u!4 &1989975863
 Transform:
   m_ObjectHideFlags: 0
@@ -3707,7 +3701,7 @@ GameObject:
   - component: {fileID: 1995729435}
   - component: {fileID: 1995729434}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Instrucciones de  mantenimiento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8136,7 +8130,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 769938517}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ControllerAlimentationFaja, Assembly-CSharp
         m_MethodName: ToggleLevelPower
         m_Mode: 1
@@ -9931,7 +9925,6 @@ MeshFilter:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 769938518}
   - {fileID: 1989975863}
   - {fileID: 1934115586}
   - {fileID: 1995729438}
