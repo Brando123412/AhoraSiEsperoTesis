@@ -7,8 +7,10 @@ public class DoorAnimatorController : MonoBehaviour
 {
     [SerializeField] private Animator door1;
     [SerializeField] private Animator door2;
+    [SerializeField] private Animator door3;
     [SerializeField] private bool isOpen1 = false;
     [SerializeField] private bool isOpen2 = false;
+    [SerializeField] private bool isOpen3 = false;
 
     public void ToggleDoor1()
     {
@@ -20,5 +22,10 @@ public class DoorAnimatorController : MonoBehaviour
     {
         isOpen2 = !isOpen2;
         door2.SetBool("IsOpen", isOpen2);
+    }
+    public void ToggleDoor3()
+    {
+        isOpen3 = !isOpen3;
+        door3.SetBool("IsOpen", isOpen3);
     }
 }
