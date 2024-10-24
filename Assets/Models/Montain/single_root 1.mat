@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: single_root
+  m_Name: single_root 1
   m_Shader: {fileID: -6465566751694194690, guid: 44245ab89240f51459a5077d7145c452,
     type: 3}
   m_Parent: {fileID: 0}
@@ -27,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BASE_COLOR_MAP:
-        m_Texture: {fileID: 2800000, guid: aaeff34d96d9ca9418bc5c882309558e, type: 3}
+        m_Texture: {fileID: 2800000, guid: e63137713c9509444a07a38f5c6dfa76, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BUMP_MAP:
@@ -74,7 +74,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _BASE_COLOR_WEIGHT: 0.547
+    - _BASE_COLOR_WEIGHT: 1
     - _BUMP_MAP_STRENGTH: 0.3
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
@@ -92,7 +92,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _METALNESS: 0
+    - _METALNESS: 0.372
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -100,8 +100,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _REFLECTIONS_IOR: 1.52
-    - _REFLECTIONS_ROUGHNESS: 1
-    - _REFLECTIONS_WEIGHT: 1.33
+    - _REFLECTIONS_ROUGHNESS: 0.547
+    - _REFLECTIONS_WEIGHT: 17.21
     - _ReceiveShadows: 1
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
@@ -119,10 +119,10 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _REFLECTIONS_COLOR: {r: 0.7651245, g: 0.8679245, b: 0.38892844, a: 1}
+    - _REFLECTIONS_COLOR: {r: 0.754717, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &6890931032298776303
+--- !u!114 &3590127730153050350
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
