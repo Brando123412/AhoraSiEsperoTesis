@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class CheckWork : MonoBehaviour
 {
 
     [SerializeField] int misiones;
     [SerializeField] Toggle[] ArregloObjetivos;
-    [SerializeField] int cantidadZapatos=1;
+    private int cantidadZapatos =0;
+    [SerializeField] XRSimpleInteractable buttonNextLevel;
+    [SerializeField] int actualCantidad = 0;
+
     private void Awake()
     {
         misiones = ArregloObjetivos.Length;
@@ -21,6 +25,7 @@ public class CheckWork : MonoBehaviour
             if (i != 3)
             {
                 ArregloObjetivos[i].isOn = true;
+                actualCantidad++;
             }
             else
             {
@@ -28,9 +33,13 @@ public class CheckWork : MonoBehaviour
                 if (cantidadZapatos >= 2)
                 {
                     ArregloObjetivos[i].isOn = true;
+                    actualCantidad++;
                 }
             }
         }
-        
+        if(actualCantidad >= misiones)
+        {
+            buttonNextLevel.enabled=true;
+        }
     }
 }

@@ -1,0 +1,34 @@
+{
+    "name": "XD",
+    "maps": [
+        {
+            "name": "sad",
+            "id": "5d6cd80d-9851-4c0e-a0c5-be5daaa85643",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "28079b98-595c-4cc4-bc0c-8efa52940e8c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5a6fff7c-d1b7-423e-9f96-5cc1868b35b5",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerRight>{RightHand}/secondarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
