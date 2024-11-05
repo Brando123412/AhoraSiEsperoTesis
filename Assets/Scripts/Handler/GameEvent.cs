@@ -10,7 +10,6 @@ public class GameEvent : ScriptableObject
     {
         gameListeners = new();
     }
-
     private void OnDisable()
     {
         gameListeners.Clear();

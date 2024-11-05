@@ -7,6 +7,14 @@ using System;
 public class GameIntEvent : ScriptableObject
 {
     private List<GameIntEventListeners> gameListeners;
+    private void OnEnable()
+    {
+        gameListeners = new();
+    }
+    private void OnDisable()
+    {
+        gameListeners.Clear();
+    }
     public void Raise(int value)
     {
         foreach (var listener in gameListeners)
