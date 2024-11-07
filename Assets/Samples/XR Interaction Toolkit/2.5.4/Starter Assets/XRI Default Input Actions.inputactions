@@ -2677,6 +2677,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "ButtonsFrontales",
+            "id": "cc86fbbe-48f7-419c-94fc-0544f5ce92ab",
+            "actions": [
+                {
+                    "name": "ButtonA",
+                    "type": "Button",
+                    "id": "d4bf5536-5d27-41d8-bd28-fcdb8baf553c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ButtonB",
+                    "type": "Button",
+                    "id": "a1e684c2-4a3f-4b85-b015-01deeb054236",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1324df5c-a635-4037-9e05-94e0aef5d771",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonA",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc23b006-96c4-4381-a2c0-fb547212ba3f",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonB",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

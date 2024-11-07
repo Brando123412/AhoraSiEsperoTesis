@@ -20,7 +20,6 @@ public class InputsController : MonoBehaviour
 
 
     [Header("ObjectInteractable")]
-    public bool ats = false;
     public bool candado = false;
     [SerializeField]private GameIntEvent eventTarea;
     
@@ -58,9 +57,6 @@ public class InputsController : MonoBehaviour
         if (candado)
         {
             eventTarea.Raise(9);
-        }else if (ats)
-        {
-            eventTarea.Raise(1);
         }
     }
 
@@ -85,10 +81,6 @@ public class InputsController : MonoBehaviour
         {
             eventTarea.Raise(9);
         }
-        else if (ats)
-        {
-            eventTarea.Raise(1);
-        }
     }
 
     private void OnActionCanceledRight(InputAction.CallbackContext context)
@@ -102,9 +94,6 @@ public class InputsController : MonoBehaviour
         if (hoveredObject.name == "CandadoInteractable")
         {
             candado = true;
-        }else if (hoveredObject.name == "ATSInteractable")
-        {
-            ats = true;
         }
 
     }
@@ -116,10 +105,6 @@ public class InputsController : MonoBehaviour
         if (hoveredObject.name == "CandadoInteractable")
         {
             candado = false;
-        }
-        else if (hoveredObject.name == "ATSInteractable")
-        {
-            ats = false;
         }
     }
 }

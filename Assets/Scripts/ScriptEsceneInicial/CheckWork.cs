@@ -6,7 +6,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class CheckWork : MonoBehaviour
 {
-
     [SerializeField] int misiones;
     [SerializeField] Toggle[] ArregloObjetivos;
     private int cantidadZapatos =0;
