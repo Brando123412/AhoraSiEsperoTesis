@@ -102,83 +102,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "3D Vector",
-                    "id": "24b0fb57-4a85-485b-897f-1698f1db4c47",
-                    "path": "3DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "623aa293-b0a1-4d97-b66d-5af6d64182c2",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "73a00ee8-4336-440a-b839-dbd7ee862f5c",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "2b7258f6-06d7-4440-96ff-bcb52b05eaa5",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "d7b96c56-09dd-442e-a463-9bb54aaba063",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "forward",
-                    "id": "043a4ef5-6600-41fc-a978-690cdb5e83c9",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "backward",
-                    "id": "7bfb9d10-8037-4938-92d6-58b170d7048b",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
                     "id": "e2017383-a3f6-4c46-acb1-012b8eece9cc",
                     "path": "<XRHMD>/centerEyeRotation",
@@ -2679,13 +2602,31 @@
             ]
         },
         {
-            "name": "ButtonsFrontales",
-            "id": "cc86fbbe-48f7-419c-94fc-0544f5ce92ab",
+            "name": "Buttons",
+            "id": "2430a040-ab34-488d-9b6f-9f13ea0ff589",
             "actions": [
+                {
+                    "name": "ButtonX",
+                    "type": "Button",
+                    "id": "ee1b1bae-3dea-4f36-803f-194a4c7f12b6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ButtonY",
+                    "type": "Button",
+                    "id": "4d41f1bd-0bf2-4ef7-8a3b-a0d37ae232fa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
                 {
                     "name": "ButtonA",
                     "type": "Button",
-                    "id": "d4bf5536-5d27-41d8-bd28-fcdb8baf553c",
+                    "id": "573f5270-2701-45d4-9b11-7dd9cb255a3a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -2694,7 +2635,7 @@
                 {
                     "name": "ButtonB",
                     "type": "Button",
-                    "id": "a1e684c2-4a3f-4b85-b015-01deeb054236",
+                    "id": "f461308b-cece-4707-af25-9411d210a51d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -2704,8 +2645,30 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "1324df5c-a635-4037-9e05-94e0aef5d771",
-                    "path": "",
+                    "id": "74f425cf-277f-4193-8179-83916f064a99",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerLeft>{LeftHand}/primarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cfb04588-617e-4401-b39b-1255c36babe4",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerLeft>{LeftHand}/secondarybutton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "59248cdd-31cd-494a-a6f1-a75f4d4d3eb2",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerRight>{RightHand}/primarybutton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -2715,8 +2678,8 @@
                 },
                 {
                     "name": "",
-                    "id": "bc23b006-96c4-4381-a2c0-fb547212ba3f",
-                    "path": "",
+                    "id": "fb1e3d04-e57c-4d12-b175-d844dd89f970",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerRight>{RightHand}/secondarybutton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

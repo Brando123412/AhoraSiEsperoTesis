@@ -7,10 +7,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class InputsController : MonoBehaviour
 {
     [Header("InputLeft")]
-    [SerializeField] InputActionProperty selectActionLeft;
+    [SerializeField] InputActionProperty buttonX;
     //[SerializeField] GameIntEvent leftPress;
     [Header("InputLeft")]
-    [SerializeField] InputActionProperty selectActionRight;
+    [SerializeField] InputActionProperty buttonA;
     //[SerializeField] GameIntEvent rightPress;
 
     
@@ -20,18 +20,18 @@ public class InputsController : MonoBehaviour
 
 
     [Header("ObjectInteractable")]
-    public bool candado = false;
+    public GameObject candado = null;
     [SerializeField]private GameIntEvent eventTarea;
     
 
 
     void OnEnable()
     {
-        selectActionLeft.action.performed += OnActionPerformedLeft;
-        selectActionLeft.action.canceled += OnActionCanceledLeft;
+        buttonA.action.performed += OnActionPerformedButtonA;
+        buttonA.action.canceled += OnActionCanceledButtonA;
 
-        selectActionRight.action.performed += OnActionPerformedRight;
-        selectActionRight.action.canceled += OnActionCanceledRight;
+        buttonX.action.performed += OnActionPerformedButtonX;
+        buttonX.action.canceled += OnActionCanceledButtonX;
 
         selectActionMovement.action.performed += OnActionPerformedMovement;
         selectActionMovement.action.canceled += OnActionCanceledMovement;
@@ -41,28 +41,29 @@ public class InputsController : MonoBehaviour
 
     void OnDisable()
     {
-        selectActionLeft.action.performed -= OnActionPerformedLeft;
-        selectActionLeft.action.canceled -= OnActionCanceledLeft;
+        buttonA.action.performed -= OnActionPerformedButtonA;
+        buttonA.action.canceled -= OnActionCanceledButtonA;
 
-        selectActionRight.action.performed -= OnActionPerformedRight;
-        selectActionRight.action.canceled -= OnActionCanceledRight;
+        buttonX.action.performed -= OnActionPerformedButtonX;
+        buttonX.action.canceled -= OnActionCanceledButtonX;
 
         selectActionMovement.action.performed -= OnActionPerformedMovement;
         selectActionMovement.action.canceled -= OnActionCanceledMovement;
     }
 
-    private void OnActionPerformedLeft(InputAction.CallbackContext context)
+    private void OnActionPerformedButtonA(InputAction.CallbackContext context)
     {
-        print("LeftPer");
-        if (candado)
+        print("ButtonA");
+        if (candado != null)
         {
             eventTarea.Raise(9);
+            candado.SetActive(false);
         }
     }
 
-    private void OnActionCanceledLeft(InputAction.CallbackContext context)
+    private void OnActionCanceledButtonA(InputAction.CallbackContext context)
     {
-        print("LeftCance");
+        print("ButtonA");
     }
 
     private void OnActionPerformedMovement(InputAction.CallbackContext context)
@@ -74,18 +75,23 @@ public class InputsController : MonoBehaviour
     {
         //movementAudioSource.Stop();
     }
-    private void OnActionPerformedRight(InputAction.CallbackContext context)
+    private void OnActionPerformedButtonX(InputAction.CallbackContext context)
     {
-        print("RightPer");
-        if (candado)
+        print("ButtonX");
+        if (candado != null && candado.activeSelf)
         {
-            eventTarea.Raise(9);
+            eventTarea.Raise(9); 
+            candado.SetActive(false);
+        }
+        if (candado != null && !candado.activeSelf)
+        {
+            candado.SetActive(true);
         }
     }
 
-    private void OnActionCanceledRight(InputAction.CallbackContext context)
+    private void OnActionCanceledButtonX(InputAction.CallbackContext context)
     {
-        print("RightCancel");
+        print("ButtonXCancel");
     }
     public void OnHoverEnter(SelectEnterEventArgs args)
     {
@@ -93,7 +99,7 @@ public class InputsController : MonoBehaviour
         Debug.Log("Apuntando al objeto: " + hoveredObject.name);
         if (hoveredObject.name == "CandadoInteractable")
         {
-            candado = true;
+            candado = hoveredObject;
         }
 
     }
@@ -104,7 +110,7 @@ public class InputsController : MonoBehaviour
         Debug.Log("Dejaste de apuntar al objeto: " + hoveredObject.name);
         if (hoveredObject.name == "CandadoInteractable")
         {
-            candado = false;
+            candado = null;
         }
     }
 }

@@ -10,6 +10,7 @@ public class CheckWork : MonoBehaviour
     [SerializeField] Toggle[] ArregloObjetivos;
     private int cantidadZapatos =0;
     [SerializeField] XRSimpleInteractable buttonNextLevel;
+    [SerializeField] GameObject flecha;
     [SerializeField] int actualCantidad = 0;
 
     private void Awake()
@@ -38,6 +39,7 @@ public class CheckWork : MonoBehaviour
         }
         if(actualCantidad >= misiones)
         {
+            flecha.SetActive(true);
             buttonNextLevel.enabled=true;
         }
     }
