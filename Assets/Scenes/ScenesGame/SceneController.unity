@@ -508,20 +508,6 @@ MonoBehaviour:
             m_CallState: 2
           - m_Target: {fileID: 812190267}
             m_TargetAssemblyTypeName: ControladorScenes, Assembly-CSharp
-            m_MethodName: DisableGameObjects
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 11400000, guid: e82da661aac2f1b4e86601d4a012ae33,
-                type: 2}
-              m_ObjectArgumentAssemblyTypeName: ScenesManager.SceneConfiguration,
-                Assembly-CSharp
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 812190267}
-            m_TargetAssemblyTypeName: ControladorScenes, Assembly-CSharp
             m_MethodName: UnLoadSceneAdditive
             m_Mode: 2
             m_Arguments:
@@ -623,20 +609,6 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-          - m_Target: {fileID: 812190267}
-            m_TargetAssemblyTypeName: ControladorScenes, Assembly-CSharp
-            m_MethodName: DisableGameObjects
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 11400000, guid: e82da661aac2f1b4e86601d4a012ae33,
-                type: 2}
-              m_ObjectArgumentAssemblyTypeName: ScenesManager.SceneConfiguration,
-                Assembly-CSharp
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
     - nameEventListener: Scene6
       gameEvent: {fileID: 11400000, guid: 7adb3496620059842a15d8cab631c9bb, type: 2}
       responde:
@@ -726,20 +698,6 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-          - m_Target: {fileID: 812190267}
-            m_TargetAssemblyTypeName: ControladorScenes, Assembly-CSharp
-            m_MethodName: DisableGameObjects
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 11400000, guid: e82da661aac2f1b4e86601d4a012ae33,
-                type: 2}
-              m_ObjectArgumentAssemblyTypeName: ScenesManager.SceneConfiguration,
-                Assembly-CSharp
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
     - nameEventListener: Scene7
       gameEvent: {fileID: 11400000, guid: ee8d3131bd1ca75419992b074ab24de7, type: 2}
       responde:
@@ -779,20 +737,6 @@ MonoBehaviour:
             m_Mode: 2
             m_Arguments:
               m_ObjectArgument: {fileID: 11400000, guid: c5758dbbf46d245459f90625d36f2bd0,
-                type: 2}
-              m_ObjectArgumentAssemblyTypeName: ScenesManager.SceneConfiguration,
-                Assembly-CSharp
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 812190267}
-            m_TargetAssemblyTypeName: ControladorScenes, Assembly-CSharp
-            m_MethodName: DisableGameObjects
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 11400000, guid: e82da661aac2f1b4e86601d4a012ae33,
                 type: 2}
               m_ObjectArgumentAssemblyTypeName: ScenesManager.SceneConfiguration,
                 Assembly-CSharp
@@ -952,8 +896,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.6436437, y: 1, z: 1}
+  m_Center: {x: 0.028606318, y: 0, z: 0}
 --- !u!4 &128225843
 Transform:
   m_ObjectHideFlags: 0
@@ -1136,8 +1080,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.2666526, y: 1, z: 11.328086}
+  m_Center: {x: -0.009139085, y: 0, z: -5.1640434}
 --- !u!1 &391083055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,8 +1133,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.20518124, y: 0.09008115, z: 0.32858148}
-  m_Center: {x: -0.37247428, y: -0.40414593, z: 0.17821725}
+  m_Size: {x: 0.24898499, y: 0.10159812, z: 0.33279943}
+  m_Center: {x: -0.70725685, y: -0.39838743, z: 0.18443549}
 --- !u!1 &455598581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,7 +1937,7 @@ Transform:
   m_GameObject: {fileID: 1082985063}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.6, y: 0.67, z: -78.74}
+  m_LocalPosition: {x: -6.264, y: 0.67, z: -78.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2018,8 +1962,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.612114, y: 2.3869755, z: 0.25326538}
-  m_Center: {x: -0.07730818, y: 0.69348776, z: -0.09322357}
+  m_Size: {x: 1.4663134, y: 3.193078, z: 0.28748322}
+  m_Center: {x: -0.45689297, y: 0.9708488, z: 0.72224045}
 --- !u!1 &1116622719
 GameObject:
   m_ObjectHideFlags: 0
