@@ -9,24 +9,19 @@ public class ControllerPresentation : MonoBehaviour
     [SerializeField] private Sprite[] presentationSprites;
     [SerializeField] private Image imagePresentation;
     private int index=0;
-    //[SerializeField] GameEvent EventFinishCapacitation;
-
     
     public void NextPresentation()
     {
+        Debug.Log("Next");
         if(index < presentationSprites.Length-1)
         {
             index++;
             imagePresentation.sprite = presentationSprites[index];
         }
-        
-        //if (index == presentationSprites.Length-2)
-        //{
-        //    EventFinishCapacitation.Raise();
-        //}
     }
     public void PreviousPresentation()
     {
+        Debug.Log("Previous");
         if (index > 0)
         {
             index--;
