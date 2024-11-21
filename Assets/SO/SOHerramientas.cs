@@ -8,11 +8,9 @@ public class SOHerramientas : ScriptableObject
 {
     [SerializeField] TypeHerramientas nameSettings;
     [SerializeField] GameObject prefabReferencia;
-    //public GameObject PrefabReferencia => prefabReferencia;
     public void RetunrObject(Vector3 positionSpanw)
     {
         GameObject tmp = Instantiate(prefabReferencia, positionSpanw, Quaternion.identity); 
-        //tmp.AddComponent<GrabInteractable>();
     }
 
 }
