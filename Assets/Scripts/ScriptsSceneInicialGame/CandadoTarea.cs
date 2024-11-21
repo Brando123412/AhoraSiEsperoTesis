@@ -5,13 +5,17 @@ using UnityEngine;
 public class CandadoTarea : MonoBehaviour
 {
     [SerializeField] int tarea;
+    [SerializeField] int index;
 
-    [SerializeField] GameIntEvent gameEvent;
-    private void OnCollisionEnter(Collision collision)
+    [SerializeField] GameIntTwoEvent gameEvent;
+    
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Nivel1Tarea"))
+        if (other.gameObject.CompareTag("Nivel1Tarea"))
         {
-            gameEvent.Raise(tarea-1);               
+            gameEvent.Raise(index, 1);
+            other.gameObject.SetActive(false);
+            Debug.Log("Candado");
         }
     }
 }

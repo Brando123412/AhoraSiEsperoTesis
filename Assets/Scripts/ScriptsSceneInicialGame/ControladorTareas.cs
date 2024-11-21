@@ -16,13 +16,13 @@ public class ControladorTareas : MonoBehaviour
     GameEvent Event3;
     private void Start()
     {
-        for (int i = 0;i<cantidadTareasSo.verificadoTarea.Length;i++)
+        /*for (int i = 0;i<cantidadTareasSo.verificadoTarea.Length;i++)
         {
             if (cantidadTareasSo.verificadoTarea[i])
             {
                 Event1.Raise();
             }
-        }
+        }*/
         
     }
 }

@@ -12,13 +12,15 @@ public class CantidadTareasGame : ScriptableObject
     
     public void ControlTareas(int index, int tarea)
     {
+        //Debug.Log($"Tarea: {index} | Cumplio: {tarea} | Cantidad : {listaTareas[index]}");
         if (tarea ==1) {
-            listaTareas[index] = tarea++;
+            listaTareas[index] += tarea;
         } 
         else if (tarea == 0)
         {
-            listaTareas[index] = tarea--;
+            listaTareas[index] -= tarea;
         }
+       // Debug.Log($"Tarea: {index} | Cumplio: {tarea} | Cantidad : {listaTareas[index]}");
         VerificarTareas(index);
     }
     private void VerificarTareas(int indexToArray)
@@ -26,13 +28,19 @@ public class CantidadTareasGame : ScriptableObject
         switch (indexToArray)
         {
             case 0:
-                if (listaTareas[indexToArray] >=1)
+                if (listaTareas[indexToArray] >=2)
                 {
                     listTareasSO[indexToArray].Raise();
                     verificadoTarea[indexToArray] = true;
                 }          
                 break;
             case 1:
+                if (listaTareas[indexToArray] >= 1 && verificadoTarea[indexToArray])
+                {
+                    listTareasSO[indexToArray].Raise();
+                    verificadoTarea[indexToArray] = true;
+                }
+
                 break;
             case 3:
                 break;
