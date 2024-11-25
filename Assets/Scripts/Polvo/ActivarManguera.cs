@@ -8,10 +8,14 @@ public class ActivarManguera : MonoBehaviour
 
     void Update()
     {
-        // Activa el soplado cuando el jugador presiona un botón (por ejemplo, la tecla E)
         if (Input.GetKeyDown(KeyCode.E))
         {
             polvoSoplado.ActivarSoplado();
+        }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            polvoSoplado.DetenerSoplado();
         }
     }
 }

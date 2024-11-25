@@ -33,9 +33,14 @@ public class PolvoSoplado : MonoBehaviour
         forceModule.space = ParticleSystemSimulationSpace.World;
 
         // Direcciona las partículas hacia abajo en un ángulo
-        Vector3 direccion = (direccionSoplado.position - transform.position).normalized;
+        Vector3 direccion = (transform.position -direccionSoplado.position).normalized;
         forceModule.x = direccion.x * 5; // Ajusta la fuerza en X
         forceModule.y = direccion.y * 5; // Ajusta la fuerza en Y para direccionar hacia el suelo
         forceModule.z = direccion.z * 5; // Ajusta la fuerza en Z
+    }
+    public void DetenerSoplado()
+    {
+        emissionModule.rateOverTime = 0; // Detiene la emisión de partículas
+        forceModule.enabled = false; // Desactiva la fuerza para las partículas restantes
     }
 }
