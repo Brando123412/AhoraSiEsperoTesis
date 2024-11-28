@@ -10,7 +10,7 @@ public class ActivarManguera : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            polvoSoplado.ActivarSoplado();
+            //polvoSoplado.ActivarSoplado();
         }
 
         if (Input.GetKeyUp(KeyCode.E))
