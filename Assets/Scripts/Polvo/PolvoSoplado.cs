@@ -8,8 +8,11 @@ public class PolvoSoplado : MonoBehaviour
     private ParticleSystem.MainModule mainModule;
     private ParticleSystem.ForceOverLifetimeModule forceModule;
     private ParticleSystem.EmissionModule emissionModule;
-    [SerializeField] float forceVelocity;
 
+    [SerializeField] float forceVelocity; // Velocidad del soplado
+    [SerializeField] float cantidadCollision;
+
+    private List<ParticleCollisionEvent> collisionEvents; // Lista para almacenar los eventos de colisión
 
     void Start()
     {
@@ -17,6 +20,8 @@ public class PolvoSoplado : MonoBehaviour
         mainModule = particleSystem.main;
         forceModule = particleSystem.forceOverLifetime;
         emissionModule = particleSystem.emission;
+
+        collisionEvents = new List<ParticleCollisionEvent>(); // Inicializa la lista
 
         emissionModule.rateOverTime = 0;
         mainModule.startSpeed = 0.1f;
@@ -26,29 +31,39 @@ public class PolvoSoplado : MonoBehaviour
     {
         if (other.CompareTag("Aire"))
         {
-            ActivarSoplado(other.transform);
+            // Obtener los eventos de colisión
+            int numCollisionEvents = particleSystem.GetCollisionEvents(other, collisionEvents);
+
+            // Iterar sobre cada partícula que colisionó
+            for (int i = 0; i < numCollisionEvents; i++)
+            {
+                Vector3 collisionPosition = collisionEvents[i].intersection; // Posición de la colisión
+                Vector3 direccionSoplado = (collisionPosition - other.transform.position).normalized;
+
+                AplicarFuerzaIndividual(collisionPosition, direccionSoplado);
+            }
+
+            cantidadCollision += Time.deltaTime;
         }
     }
-    private void OnParticleTrigger()
-    {
-        Debug.Log("Hay Triger");
-    }
-    public void ActivarSoplado(Transform direccionSoplado)
-    {
-       
-        emissionModule.rateOverTime = 50;
 
+    private void AplicarFuerzaIndividual(Vector3 posicionParticula, Vector3 direccion)
+    {
+        // Configurar la fuerza para afectar partículas individuales
         forceModule.enabled = true;
         forceModule.space = ParticleSystemSimulationSpace.World;
 
-        Vector3 direccion = (transform.position -direccionSoplado.position).normalized;
-        forceModule.x = direccion.x * forceVelocity; 
-        forceModule.y = direccion.y * forceVelocity; 
-        forceModule.z = direccion.z * forceVelocity; 
+        // Aplicar la fuerza individualmente (basada en la posición)
+        forceModule.x = direccion.x * forceVelocity;
+        forceModule.y = direccion.y * forceVelocity;
+        forceModule.z = direccion.z * forceVelocity;
+
+        Debug.Log($"Aplicando fuerza en partícula en posición {posicionParticula}");
     }
+
     public void DetenerSoplado()
     {
-        emissionModule.rateOverTime = 0; // Detiene la emisión de partículas
-        forceModule.enabled = false; // Desactiva la fuerza para las partículas restantes
+        emissionModule.rateOverTime = 0;
+        forceModule.enabled = false;
     }
 }
