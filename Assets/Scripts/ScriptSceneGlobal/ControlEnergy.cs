@@ -7,14 +7,7 @@ public class ControlEnergy : MonoBehaviour
     [SerializeField] private Animator electrical;
     [SerializeField] private bool isElectrical = false;
     [SerializeField] private GameIntTwoEvent gameIntTwoEvent;
-
-    public void Update()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            ElectricalActive();
-        }
-    }
+    
     public void ElectricalActive()
     {
         isElectrical = !isElectrical;

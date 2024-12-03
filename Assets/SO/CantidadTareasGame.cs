@@ -35,7 +35,7 @@ public class CantidadTareasGame : ScriptableObject
                 }          
                 break;
             case 1:
-                if (listaTareas[indexToArray] >= 1 && verificadoTarea[indexToArray])
+                if (listaTareas[indexToArray] >= 1 && verificadoTarea[indexToArray-1])
                 {
                     listTareasSO[indexToArray].Raise();
                     verificadoTarea[indexToArray] = true;
