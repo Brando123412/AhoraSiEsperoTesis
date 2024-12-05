@@ -1116,17 +1116,17 @@ PrefabInstance:
     - target: {fileID: 2428143008927640464, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3
+      value: 0.9499999
       objectReference: {fileID: 0}
     - target: {fileID: 2428143008927640464, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.3
+      value: 0.9499999
       objectReference: {fileID: 0}
     - target: {fileID: 2428143008927640464, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3
+      value: 0.9499999
       objectReference: {fileID: 0}
     - target: {fileID: 2428143008927640464, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
@@ -1136,7 +1136,7 @@ PrefabInstance:
     - target: {fileID: 2428143008927640464, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2428143008927640464, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
@@ -1186,6 +1186,21 @@ PrefabInstance:
     - target: {fileID: 2437676404002364950, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437676404002364959, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_TrackingType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437676404002364959, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_IgnoreTrackingState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2437676404002364959, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_RotationInput.m_UseReference
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2616213269697282392, guid: d4db805e6e980214d8a5f980dadeff69,
@@ -1383,10 +1398,30 @@ PrefabInstance:
       propertyPath: m_StartingInteractionOverridesMap.Array.data[1].overrideGroupMembers.Array.data[0]
       value: 
       objectReference: {fileID: 481336887}
+    - target: {fileID: 3634636602830823661, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_AimAssistRequiredAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3634636602830823661, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_HideCursorWithNoActiveRays
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3638122593524046362, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121150415103845830, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_SmoothTurnEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4121150415103845830, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_SmoothMotionEnabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6043666884368889570, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
@@ -1538,6 +1573,16 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6311998014537486089, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323643719667999204, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6952453570859949217, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_TagString
@@ -1551,6 +1596,11 @@ PrefabInstance:
     - target: {fileID: 8277482916255438143, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8385312217806424715, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8385312217806424715, guid: d4db805e6e980214d8a5f980dadeff69,
@@ -1642,6 +1692,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_EnableInputActions
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_Action.m_Id
+      value: f8f8e493-8b25-4d6e-9e2e-38deee02f649
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_ScaleToggleAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_RotateAnchorAction.m_Action.m_Name
+      value: Rotate Anchor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_Action.m_Id
+      value: 59b4b6b1-d72f-4aa6-bebe-4629d33b1ad1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_TranslateAnchorAction.m_Action.m_Name
+      value: Translate Anchor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623114820361102712, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_DirectionalAnchorRotationAction.m_UseReference
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8640382914155468288, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
@@ -1782,6 +1877,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722427994451462862, guid: d4db805e6e980214d8a5f980dadeff69,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8844784248698025521, guid: d4db805e6e980214d8a5f980dadeff69,
         type: 3}
@@ -4174,7 +4274,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 911069027}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -4182,7 +4282,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -11797,7 +11897,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 543450653579930232}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -11805,7 +11905,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -12280,7 +12380,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 423925464344600609}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -12288,7 +12388,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -12564,7 +12664,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 4760967021912879308}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -12572,7 +12672,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -12882,7 +12982,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 8784092813380958085}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -12890,7 +12990,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -14773,7 +14873,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 4802742864691071300}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -14781,7 +14881,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -15903,7 +16003,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 2138418322144127161}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -15911,7 +16011,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -16139,7 +16239,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 196731928838694952}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -16147,7 +16247,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -17176,7 +17276,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 3159201561034811874}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -17184,7 +17284,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 2
+  m_MovementType: 0
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
