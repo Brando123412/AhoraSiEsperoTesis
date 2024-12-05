@@ -2748,26 +2748,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554009836}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &609595218 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 654207006}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &609595219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 609595218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a6cef1caf30e4c498a8177214a87bf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDistance: 0.2
-  moveSpeed: 2
 --- !u!4 &610154828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cf3aa14f6c7443f4d8b0fd6fe10fcccd,
@@ -3369,31 +3349,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 863917701680103416, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: material
-      value: 
-      objectReference: {fileID: 2100000, guid: 0cc0662238b077f47990439641b40669, type: 2}
-    - target: {fileID: 3052296735080598977, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0cc0662238b077f47990439641b40669, type: 2}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9173701
-      objectReference: {fileID: 0}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.38679796
-      objectReference: {fileID: 0}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9173704
-      objectReference: {fileID: 0}
     - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3449,19 +3404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: flecha (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 609595219}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9040914b1c9a104d9e4b87a814dd6cf, type: 3}
 --- !u!1001 &674095381
 PrefabInstance:
@@ -7722,26 +7668,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632920170}
   m_CullTransparentMesh: 1
---- !u!1 &1674531728 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1798671622}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1674531729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674531728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a6cef1caf30e4c498a8177214a87bf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDistance: 0.2
-  moveSpeed: 2
 --- !u!1001 &1703636022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7750,31 +7676,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 863917701680103416, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: material
-      value: 
-      objectReference: {fileID: 2100000, guid: 0cc0662238b077f47990439641b40669, type: 2}
-    - target: {fileID: 3052296735080598977, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0cc0662238b077f47990439641b40669, type: 2}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9173701
-      objectReference: {fileID: 0}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.38679796
-      objectReference: {fileID: 0}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9173704
-      objectReference: {fileID: 0}
     - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7830,19 +7731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: flecha (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1908313439}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9040914b1c9a104d9e4b87a814dd6cf, type: 3}
 --- !u!1 &1757759165 stripped
 GameObject:
@@ -7990,31 +7882,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 863917701680103416, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: material
-      value: 
-      objectReference: {fileID: 2100000, guid: 0cc0662238b077f47990439641b40669, type: 2}
-    - target: {fileID: 3052296735080598977, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0cc0662238b077f47990439641b40669, type: 2}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9173701
-      objectReference: {fileID: 0}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.38679796
-      objectReference: {fileID: 0}
-    - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9173704
-      objectReference: {fileID: 0}
     - target: {fileID: 7928913171375355290, guid: a9040914b1c9a104d9e4b87a814dd6cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8070,19 +7937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: flecha (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1674531729}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9040914b1c9a104d9e4b87a814dd6cf, type: 3}
 --- !u!1001 &1900916965
 PrefabInstance:
@@ -8164,26 +8022,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 251064430}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1908313438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9111128983345918878, guid: a9040914b1c9a104d9e4b87a814dd6cf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1703636022}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1908313439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1908313438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a6cef1caf30e4c498a8177214a87bf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDistance: 0.2
-  moveSpeed: 2
 --- !u!1 &1912962054
 GameObject:
   m_ObjectHideFlags: 0
