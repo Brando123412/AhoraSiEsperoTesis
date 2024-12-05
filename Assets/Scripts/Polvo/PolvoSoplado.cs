@@ -38,7 +38,7 @@ public class PolvoSoplado : MonoBehaviour
             for (int i = 0; i < numCollisionEvents; i++)
             {
                 Vector3 collisionPosition = collisionEvents[i].intersection; // Posición de la colisión
-                Vector3 direccionSoplado = (collisionPosition - other.transform.position).normalized;
+                Vector3 direccionSoplado = (other.transform.position - collisionPosition).normalized;
 
                 AplicarFuerzaIndividual(collisionPosition, direccionSoplado);
             }

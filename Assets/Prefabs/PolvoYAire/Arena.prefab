@@ -682,7 +682,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 5, y: 5, z: 1}
+    m_Scale: {x: 2, y: 2, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -4911,5 +4911,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d2a3c35c127ac4095b13f0669b24f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceVelocity: 30
+  forceVelocity: 80
   cantidadCollision: 0

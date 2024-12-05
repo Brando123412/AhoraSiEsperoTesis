@@ -5,24 +5,16 @@ using UnityEngine;
 public class ControladorAire : MonoBehaviour
 {
     public ParticleSystem sp; 
-    public KeyCode toggleKey = KeyCode.Space; 
 
-    private bool isActive = false; 
-
-    void Update()
+    public void activateParticle(bool isActive)
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (isActive)
         {
-            isActive = !isActive;
-
-            if (isActive)
-            {
-                sp.Play();
-            }
-            else
-            {
-                sp.Stop();
-            }
+            sp.Play();
+        }
+        else
+        {
+            sp.Stop();
         }
     }
 }
