@@ -9,6 +9,7 @@ TagManager:
   - Nivel1Tarea
   - Aire
   - Rodillo
+  - Segurity
   layers:
   - Default
   - TransparentFX

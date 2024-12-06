@@ -20,7 +20,7 @@ public class InputsController : MonoBehaviour
 
 
     [Header("ObjectInteractable")]
-    public GameObject candado = null;
+    public GameObject ObjectSelect = null;
     [SerializeField]private GameIntEvent eventTarea;
     
 
@@ -53,11 +53,10 @@ public class InputsController : MonoBehaviour
 
     private void OnActionPerformedButtonA(InputAction.CallbackContext context)
     {
-        print("ButtonA");
-        if (candado != null)
+        if (ObjectSelect != null && ObjectSelect.activeSelf)
         {
-            eventTarea.Raise(9);
-            candado.SetActive(false);
+            eventTarea.Raise(ObjectSelect.GetComponent<ObjectsSegurity>().numeroTarea);
+            ObjectSelect.SetActive(false);
         }
     }
 
@@ -77,15 +76,10 @@ public class InputsController : MonoBehaviour
     }
     private void OnActionPerformedButtonX(InputAction.CallbackContext context)
     {
-        print("ButtonX");
-        if (candado != null && candado.activeSelf)
+        if (ObjectSelect != null && ObjectSelect.activeSelf)
         {
-            eventTarea.Raise(9); 
-            candado.SetActive(false);
-        }
-        if (candado != null && !candado.activeSelf)
-        {
-            candado.SetActive(true);
+            eventTarea.Raise(ObjectSelect.GetComponent<ObjectsSegurity>().numeroTarea);
+            ObjectSelect.SetActive(false);
         }
     }
 
@@ -96,10 +90,10 @@ public class InputsController : MonoBehaviour
     public void OnHoverEnter(SelectEnterEventArgs args)
     {
         GameObject hoveredObject = args.interactableObject.transform.gameObject;
-        Debug.Log("Apuntando al objeto: " + hoveredObject.name);
-        if (hoveredObject.name == "CandadoInteractable")
+
+        if (hoveredObject.tag == "Segurity")
         {
-            candado = hoveredObject;
+            ObjectSelect = hoveredObject;
         }
 
     }
@@ -107,10 +101,9 @@ public class InputsController : MonoBehaviour
     public void OnHoverExit(SelectExitEventArgs args)
     {
         GameObject hoveredObject = args.interactableObject.transform.gameObject;
-        Debug.Log("Dejaste de apuntar al objeto: " + hoveredObject.name);
-        if (hoveredObject.name == "CandadoInteractable")
+        if (hoveredObject.name == "Segurity")
         {
-            candado = null;
+            ObjectSelect = null;
         }
     }
 }
