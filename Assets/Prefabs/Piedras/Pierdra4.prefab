@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8215709487877240579}
   - component: {fileID: 6772984691144221575}
   - component: {fileID: 5894953313210888286}
+  - component: {fileID: -5010110273651085288}
   m_Layer: 0
   m_Name: Pierdra4
   m_TagString: Untagged
@@ -54,8 +55,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.6348663, z: 0.70248413}
-  m_Center: {x: 0, y: 0.02028516, z: -0.0067634583}
+  m_Size: {x: 0.8535732, y: 0.6348663, z: 0.6205019}
+  m_Center: {x: 0.02979766, y: 0.02028516, z: 0.0014567069}
 --- !u!54 &6772984691144221575
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -235,6 +236,19 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-5010110273651085288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400325423362409340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35146b562022fd14f88bcb373ed9bb9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTareasGame: {fileID: 11400000, guid: d21fa5a298b6f5c409b3d2a8bff53c7a, type: 2}
 --- !u!1001 &3741508262075203709
 PrefabInstance:
   m_ObjectHideFlags: 0

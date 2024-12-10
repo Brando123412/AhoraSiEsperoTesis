@@ -12,7 +12,6 @@ public class CantidadTareasGame : ScriptableObject
     
     public void ControlTareas(int index, int tarea)
     {
-        //Debug.Log($"Tarea: {index} | Cumplio: {tarea} | Cantidad : {listaTareas[index]}");
         if (tarea ==1) {
             listaTareas[index] += tarea;
         } 
@@ -20,7 +19,6 @@ public class CantidadTareasGame : ScriptableObject
         {
             listaTareas[index] -= tarea;
         }
-       // Debug.Log($"Tarea: {index} | Cumplio: {tarea} | Cantidad : {listaTareas[index]}");
         VerificarTareas(index);
     }
     private void VerificarTareas(int indexToArray)
@@ -28,14 +26,22 @@ public class CantidadTareasGame : ScriptableObject
         switch (indexToArray)
         {
             case 0:
-                if (listaTareas[indexToArray] >=2)
+                if (listaTareas[indexToArray] >=2)//Primera puerta
                 {
                     listTareasSO[indexToArray].Raise();
                     verificadoTarea[indexToArray] = true;
                 }          
                 break;
             case 1:
-                if (listaTareas[indexToArray] >= 1 && verificadoTarea[indexToArray-1])
+                if (listaTareas[indexToArray] >= 1 && verificadoTarea[indexToArray-1])// segunda puerta
+                {
+                    listTareasSO[indexToArray].Raise();
+                    verificadoTarea[indexToArray] = true;
+                }
+
+                break;
+            case 2:
+                if (listaTareas[indexToArray] >= 2)//Cambiar Rodillos
                 {
                     listTareasSO[indexToArray].Raise();
                     verificadoTarea[indexToArray] = true;
@@ -43,8 +49,39 @@ public class CantidadTareasGame : ScriptableObject
 
                 break;
             case 3:
+                if (listaTareas[indexToArray] >= 10)//Mover Obstaculos
+                {
+                    listTareasSO[indexToArray].Raise();
+                    verificadoTarea[indexToArray] = true;
+                }
                 break;
             case 4:
+                if (listaTareas[indexToArray] >= 1)//Reportar Cinta Desfasada
+                {
+                    listTareasSO[indexToArray].Raise();
+                    verificadoTarea[indexToArray] = true;
+                }
+                break;
+            case 5:
+                if (listaTareas[indexToArray] >= 1)//Reportar Cinta Desgastada
+                {
+                    listTareasSO[indexToArray].Raise();
+                    verificadoTarea[indexToArray] = true;
+                }
+                break;
+            case 6:
+                if (listaTareas[indexToArray] >= 1)//Limpiar Polvo
+                {
+                    listTareasSO[indexToArray].Raise();
+                    verificadoTarea[indexToArray] = true;
+                }
+                break;
+            case 7:
+                if (listaTareas[indexToArray] >= 1)
+                {
+                    listTareasSO[indexToArray].Raise();
+                    verificadoTarea[indexToArray] = true;
+                }
                 break;
             default:
                 break;

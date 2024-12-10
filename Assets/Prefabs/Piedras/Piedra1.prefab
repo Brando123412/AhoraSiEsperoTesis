@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6541738963588147857}
   - component: {fileID: 8027558247487768259}
   - component: {fileID: 356461225263192484}
+  - component: {fileID: 434201231702127953}
   m_Layer: 0
   m_Name: Piedra1
   m_TagString: Untagged
@@ -54,7 +55,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.7, y: 0.7, z: 0.7}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8027558247487768259
 Rigidbody:
@@ -235,6 +236,19 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &434201231702127953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204126245687495433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35146b562022fd14f88bcb373ed9bb9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTareasGame: {fileID: 11400000, guid: d21fa5a298b6f5c409b3d2a8bff53c7a, type: 2}
 --- !u!1001 &1424941294183956772
 PrefabInstance:
   m_ObjectHideFlags: 0

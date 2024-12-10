@@ -10,6 +10,7 @@ TagManager:
   - Aire
   - Rodillo
   - Segurity
+  - AreaFaja
   layers:
   - Default
   - TransparentFX

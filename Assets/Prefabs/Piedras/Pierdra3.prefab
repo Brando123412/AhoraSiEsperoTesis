@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7911810662341334656}
   - component: {fileID: 2914745010378815064}
   - component: {fileID: 6405841081092823590}
+  - component: {fileID: -4144974732207410178}
   m_Layer: 0
   m_Name: Pierdra3
   m_TagString: Untagged
@@ -235,6 +236,19 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-4144974732207410178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7073056059578171986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35146b562022fd14f88bcb373ed9bb9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTareasGame: {fileID: 11400000, guid: d21fa5a298b6f5c409b3d2a8bff53c7a, type: 2}
 --- !u!1001 &7123886603388782688
 PrefabInstance:
   m_ObjectHideFlags: 0
